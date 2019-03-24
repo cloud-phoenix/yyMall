@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/sort/sort",
+    "pages/search/search",
+    "pages/brands/brands",
+    "pages/onsales/onsales",
+    "pages/fashion/fashion",
+    "pages/agreement/agreement",
+    "pages/feedback/feedback",
+    "pages/adress/adress",
+    "pages/adress_save/adress_save",
+    "pages/shop/shop"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1296db",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f3f3f3"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home_light.png",
+        "selectedIconPath": "images/home_fill_light.png"
+      },
+      {
+        "pagePath": "pages/sort/sort",
+        "text": "分类",
+        "iconPath": "images/sort.png",
+        "selectedIconPath": "images/sort_fill.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/cart_light.png",
+        "selectedIconPath": "images/cart_fill_light.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_fill.png"
+      }
+    ]
+  }
+}
