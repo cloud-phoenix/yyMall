@@ -4,7 +4,7 @@
 ---------
  云鱼商城：微信小程序商城
  <br>数据来源:淘宝(数据不是很完整，请见谅)
- <br>本项目后台接口地址：https://github.com/liujw95/yyMallApi
+ <br>本项目后台接口地址：https://github.com/liujw95/yunyuMall
 
 ### 目录结构
 * components——存放组件
