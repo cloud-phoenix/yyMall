@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "special":"../../components/special/special"
+  },
+  "navigationBarTitleText": "云鱼商城"
+}

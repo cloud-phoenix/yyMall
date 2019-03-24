@@ -1,0 +1,10 @@
+<!--components/sortchild/sortchild.wxml-->
+<view class='wrapper'>
+  <text class='name'>{{sortchild.name}}</text>
+  <view class='sortchildren-wrapper'>
+  <block wx:for='{{sortchild.children}}'>
+  <image src='item.img' class='sortchildren-img'></image>
+  <text>{{item.name}}</text>
+  </block>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+/* components/special.wxss */
+.special-head-wrapper{
+  position: relative;
+  background-repeat:  no-repeat;
+  height: 200rpx;
+  padding: 20rpx;
+  color: #fff;
+  display: flex;
+  background-size:190% 100%;
+  background-position:50% center; 
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 30rpx;
+  
+}
+.special-head-mask{
+  position: absolute;
+  top: 0;
+  left:0;
+  background:rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index:- 1;
+  border-radius: 30rpx;
+}
+.special-list{
+  position: relative;
+  z-index: 1;
+  width: 32rpx;
+  height: 32rpx;
+}
+.special-title{
+  position: relative;
+  z-index: 1;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+.special-content-wrapper{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20rpx;
+  justify-content: space-between;
+}

@@ -1,0 +1,102 @@
+/* pages/class/class.wxss */
+/* 搜索框 */
+.search-wrapper{
+  width: 100%;
+  margin: 20rpx 0;
+}
+.search{
+  display: flex;
+  height: 50rpx;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  background-color: #d3d3d3;
+  border-radius: 50rpx;
+}
+.icon-search{
+  margin: 0 25rpx;
+}
+.search_text{
+  color: #999;
+  font-size: 32rpx;
+
+}
+/* 分类 */
+.sort-wrapper{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top:20rpx; 
+  height: 1020rpx;
+  justify-content: space-between;
+  color: #808080;
+}
+/* 左导航栏 */
+.sort-left{
+  background-color: #1296db;
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  font-size: 28rpx;
+}
+.sort-navbar-name{
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  padding: 0 20rpx;
+  text-align: center;
+  display: inline-block;
+  font-size: 26rpx;
+  border-bottom: #bbb 1rpx solid;
+}
+.sort-navbar-text-on{
+  border-left: #4B0082 8rpx solid;
+  background-color: rgb(92, 185, 216)  ;
+}
+/* 右菜单栏 */
+.sort-right{
+  
+  height: 1000rpx;
+  width: 75%;
+  color: #777;
+  padding: 20rpx;
+}
+.sort-right ::-webkit-scrollbar{
+  display: none;
+}
+/* 次级菜单 */
+.node-wrapper{
+  width: 100%;
+  padding: 0 20rpx;
+}
+.node-name{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #1296db;
+}
+/* 子菜单 */
+.leaf-wrapper{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-bottom: #1296db 1rpx solid;
+}
+.leaf{
+  width: 33%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin:20rpx 0; 
+}
+.leaf-img{
+  background-color: #fff;
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+  border-radius:50rpx; 
+}
+.leaf-name{
+  font-size: 20rpx;
+}

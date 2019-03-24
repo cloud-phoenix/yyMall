@@ -1,0 +1,58 @@
+/**index.wxss**/
+/* 个人信息 */
+
+.userinfo-wrapper{
+  background-color: #fff;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250rpx;
+  background: -webkit-linear-gradient(#1296db, rgb(79, 79, 206));
+  border-bottom-left-radius: 40%  100%;
+  border-bottom-right-radius:  40%  100%;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: #fff 1rpx solid;
+}
+
+.userinfo-nickname {
+  color: #fff;
+  
+  margin-top: 20rpx; 
+  font-size: 28rpx;
+}
+.userinfo-btn{
+  width: 180rpx;
+  font-size: 28rpx;
+  margin-top: 20rpx; 
+}
+/* 菜单列表 */
+.tab-list-wrapper{
+  width: 100%;
+  display: flex;
+  padding: 20rpx 0;
+  background-color: #fff;
+  flex-flow: row nowrap;
+  border-bottom: #eee 1rpx solid;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tab-list-icon{
+  margin: 0 20rpx;
+  width: 64rpx;
+  height: 64rpx;
+}
+/* 退出登录 */
+.loginout-btn{
+  margin-top: 20rpx;
+  width: 100%;
+  color: #707070;
+  font-size: 28rpx;
+  border: #eee 1rpx solid;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "sortchild": "../../components/sortchild/sortchild"
+  },
+  "navigationBarTitleText": "分类"
+}

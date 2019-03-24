@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "special-content":"../special-content/special-content"
+  }
+}

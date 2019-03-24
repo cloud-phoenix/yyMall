@@ -1,0 +1,4 @@
+<!--components/shop-list/shop-list.wxml-->
+<view>
+{{shop.name}}
+</view>

@@ -1,0 +1,35 @@
+<!--pages/adress_add/adress_add.wxml-->
+<view class='container'>
+  <form class='adress-form'>
+  <view class='adress-form-wrapper'>
+  <text class='adress-text'>收货人</text >
+     <input id='receiver' class='adress-input' placeholder='姓名' placeholder-class='adress-input-placeholder' required='true' bindchange='bindChange' value='{{receiver}}'></input>
+  </view>
+  <view class='adress-form-wrapper'>
+  <text class='adress-text'>联系方式</text >
+     <input id='phone' class='adress-input' placeholder='手机号码' bindchange='bindChange'  type='number' placeholder-class='adress-input-placeholder' value='{{phone}}'></input>
+  </view>
+  <view class='adress-form-wrapper'>
+  <text class='adress-text'>所在地区</text >
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" >
+    <view class="picker">
+      {{region}}
+    </view>
+  </picker>
+  </view>
+  <view class='adress-form-wrapper'>
+  <text class='adress-text'>详细地址</text >
+     <input id='detail' class='adress-input' placeholder='详细地址需填写楼栋楼层或房间号信息' placeholder-class='adress-input-placeholder' bindchange='bindChange' value='{{detail}}'></input>
+  </view>
+  <view class='adress-form-wrapper'>
+  <text class='adress-text'>地址标签</text >
+     <radio-group class="radio-group" bindchange="radioChange">
+  <label class="radio" wx:for="{{labels}}" wx:key='value'>
+    <radio class='adress-radio' value="{{item.value}}" checked="{{item.checked}}" />
+    {{item.value}}
+  </label>
+</radio-group>
+  </view>
+  <button class='adress-submit'  bindtap=''>确认</button>
+  </form>
+</view>

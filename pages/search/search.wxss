@@ -1,0 +1,124 @@
+/* pages/search/search.wxss */
+/* 搜索框 */
+.search-wrapper{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+  height: 50rpx;
+   width: 100%;
+}
+.search{
+  display: flex;
+  height: 50rpx;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background-color: #d3d3d3;
+  border-radius: 50rpx;
+  font-size: 28rpx;
+}
+.search-icon{
+  margin: 0 25rpx;
+}
+.search-input{
+  width: 80%;
+}
+.input_placeholder{
+  color: #999;
+}
+.search-btn{
+  width: 20%;
+  margin-left: 20rpx;
+  height: 50rpx;
+  background-color: rgb(18, 150, 219);
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  color: #fff;
+  display: inline-block;
+  line-height: 50rpx;
+}
+.search-hidden{
+  display: none;
+}
+/* 搜索结果 */
+.result-wrapper{
+  width: 100%;
+  margin-top: 20rpx;
+}
+/* 排序 */
+.result-order-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.result-order{
+  color: #000;
+}
+/* 商品列表 */
+.result-shop-wrapper{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.result-shop{
+  margin-top: 20rpx;
+  width: 45%;
+  border: #ddd 1rpx solid;
+}
+.shop-img{
+  width: 100%;
+  height: 356rpx;
+}
+.shop-name{
+  color:#000;
+  width: 100%;
+  display: inline-block;
+  height:2.5em;
+  overflow: hidden;
+  font-size: 24rpx;
+  font-weight: bold;
+  text-align: center;
+  margin: 10rpx 0;
+}
+
+.shop-rmb{
+   font-size: 18rpx;
+      color:#FF5000;
+      }
+      .shop-price{
+        color:#FF5000;
+          font-weight: bold;}
+          .shop-buy{ width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+          }
+.shop-rmb{
+   font-size: 18rpx;
+   color:#FF5000;
+}
+.shop-price{
+  color:#FF5000;
+   font-size: 26rpx;
+  font-weight: bold;
+}
+.shop-gobuy{
+  color: #1296db;
+  font-size: 18rpx;}
+  .history{
+    width: 30%;
+    display: flex;
+    color: #a3a3a3;
+    align-self: flex-start;
+    margin-left: 50rpx;
+    flex-flow: column nowrap;
+  }
+  .history-wrapper{
+display: flex;
+    color: #a3a3a3;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }

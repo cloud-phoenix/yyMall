@@ -1,0 +1,14 @@
+<view class='special-head-wrapper' style='background-image:url({{special.headImg}})'>
+  <view class='special-head-mask' >
+  </view>
+  <navigator>
+    <image src='../../images/list.png' class='special-list'></image>
+  </navigator>
+  <text class='special-title'>{{special.title}}</text>
+</view>
+<view class='special-content-wrapper'>
+  <block wx:for='{{special.shops}}' wx:key='id'>
+    <special-content shop='{{item}}'></special-content>
+   
+  </block>
+</view>

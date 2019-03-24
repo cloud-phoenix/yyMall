@@ -1,0 +1,18 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='container'>
+  <form >
+    <view class="page-section">
+      <view class="page-section-title">问题或建议</view>
+      <view class="textarea-wrp">
+        <textarea auto-focus="true"   placeholder='请描述您的问题或建议，我们将尽快优化体验，感谢您的反馈！' name='detail' bindinput='bindInput'/>
+      </view>
+    </view>
+<view class="page-section">
+  <view class="page-section-title">联系方式(选填)</view>
+  <view class="textarea-wrp">
+    <input   placeholder='请留下您的手机号码' type='number' name='phone'/>
+  </view>
+</view>
+<button type='submit' bindtap='bindTap' disabled='{{!hasValue}}'>提交</button>
+</form>
+</view>

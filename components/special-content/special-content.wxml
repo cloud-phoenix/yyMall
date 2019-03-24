@@ -1,0 +1,10 @@
+<!--components/special-content/special-content.wxml-->
+<navigator class='wrapper'>
+<image src='{{shop.images[0]}}' class='shop-img'></image>
+<text class='shop-name'>{{shop.title}}</text>
+ <view class='shop-buy'>
+<text class='shop-rmb'>¥</text>
+<text class='shop-price'>{{price}}</text>
+<text class='shop-gobuy'>立即购买></text>
+</view>
+</navigator>

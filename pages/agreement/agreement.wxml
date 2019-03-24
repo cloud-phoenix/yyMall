@@ -1,0 +1,5 @@
+<!--pages/agreement/agreement.wxml-->
+<view class='container'>
+  <rich-text nodes='{{agreement}}' >
+  </rich-text>
+</view>

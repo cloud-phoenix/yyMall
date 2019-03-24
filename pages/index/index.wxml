@@ -1,0 +1,47 @@
+<view class='container'>
+  <!-- 搜索框 -->
+  <view class='search' bindtap='goToSearch'>
+    <icon class="search-icon" type="search" size="14"></icon>
+    <input class="" placeholder='搜索商品' placeholder-class='search_text'    ></input>
+  </view>
+  <!-- 广告轮播 -->
+  <swiper class='ad-wrapper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <block wx:for="{{index.ad}}" wx:key="_id">
+      <swiper-item>
+        <navigator url="{{item.tapUrl}}">
+          <image class="img-ad" src="{{item.imgUrl}}" mode='widthFit' />
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 承诺 -->
+  <view class='promise'>
+    <block wx:for='{{promiseImg}}' wx:key='text'>
+      <view class='promise-wrapper'>
+        <image src='{{item.url}}' class='promise-img'></image>
+        <text>{{item.text}}</text>
+      </view>
+    </block>
+  </view>
+  <!-- 专区 -->
+  <view class='special' wx:for='{{index.special}}' wx:key='id'>
+    <special special='{{item}}'></special>
+  </view>
+  <!-- 买家须知 -->
+  <view class='notice'>
+    <view class='notic-head'>
+      <text class='notic-head-h1'>买家须知</text>
+      <text class='notic-head-h2'>为了给您更好的购物体验，云鱼商城在此提醒您了解以下细节！</text>
+    </view>
+    <view class='notice-content'>
+      <block wx:for='{{notices}}' wx:key='title'>
+        <text class='notice-title'>{{item.title}}</text>
+        <text class='notice-detail'>{{item.detail}}</text>
+      </block>
+    </view>
+  </view>
+  <!-- 页脚 -->
+  <view class='footer'>
+    <text>Copyright © 2019-? 云城商城</text>
+  </view>
+</view>

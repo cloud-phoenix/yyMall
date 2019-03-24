@@ -1,0 +1,13 @@
+/* pages/shopcar/shopcar.wxss */
+.empty-img{
+  width: 50%;
+  margin-bottom: 10rpx;
+}
+.empty-text{
+  color: #aaa;
+  font-size: 32rpx;
+}
+.empty-btn{
+  margin: 50rpx auto;
+  border: #000 1px solid; 
+}

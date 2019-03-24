@@ -1,0 +1,10 @@
+<!--pages/adress/adress.wxml-->
+<view class='container'>
+<view class='adress-wrapper'>
+<view class='adress-empty-wrapper' wx:if='{{adress.length==0}}'>
+<image src='../../images/adress-empty.png' class='adress-empty-img' mode='aspectFit'></image>
+<text>该账号还没有收货地址</text>
+</view>
+</view>
+<button class='adress-add-btn' bindtap='addAdress'>新增收货地址</button> 
+</view>

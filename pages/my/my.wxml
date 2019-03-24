@@ -1,0 +1,16 @@
+<!-- 个人中心 -->
+<!-- 个人信息 -->
+<view class='userinfo-wrapper'>
+<view class="userinfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl?userInfo.avatarUrl:'../../images/avatar.png'}}" mode="cover"></image>
+       <button class='userinfo-btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 账号登录 </button>
+      <text wx:else class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  </view>
+<view class='container'>
+<navigator url='{{item.url}}' class='tab-list-wrapper' wx:for='{{tablists}}' wx:key='name'>
+  <image class='tab-list-icon' src='{{item.icon}}' ></image>
+  <text>{{item.name}}</text>
+  </navigator>
+  <button bindtap='loginOut' class='loginout-btn' wx:if='{{hasUserInfo}}'>退出登录</button>
+</view>

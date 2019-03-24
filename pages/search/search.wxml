@@ -1,0 +1,39 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+  <!-- 搜索框 -->
+  <view class='search-wrapper'>
+    <view class='search'>
+      <icon class="search-icon" type="search" size="14"></icon>
+      <input class="search-input" placeholder='搜索商品' placeholder-class='input_placeholder' focus='true' bindfocus='inputFocus' bindinput='inputChange' value='{{inputValue}}'></input>
+      <icon class="search-icon {{!inputValue?'search-hidden':''}} " type='clear' size='14' bindtouchend='clearInput'></icon>
+    </view>
+    <button class="search-btn {{beginSearch?'begin-search':''}}" bindtap='beginSearch'>搜索</button>
+  </view>
+  <!-- 搜索历史 -->
+  <view class='history' wx:if='{{showHistory}}'>
+    <view class='history-wrapper' wx:for='{{history}}'>
+      <text class='history-text'>{{item}}</text>
+      <text>删除</text>
+    </view>
+  </view>
+  <!-- 搜索结果 -->
+  <view wx:if='{{shops.length!=0}}' class='result-wrapper'>
+    <view class='result-order-wrapper'>
+      <text class=" {{order==index?'result-order':''}}" wx:for='{{orderBy}}' wx:key='*this' bindtap='orderBy'>{{item}} </text>
+    </view>
+    <view class='result-shop-wrapper'>
+      <view class='result-shop' wx:for='{{orders?orders:shops}}' wx:key='_id'>
+        <image class='shop-img' src='{{item.images[0]}}' mode='widthFix'></image>
+        <text class='shop-name'>{{item.title}}</text>
+        <view class='shop-buy'>
+          <view>
+            <text class='shop-rmb'>¥</text>
+            <text class='shop-price'>{{item.price.$numberDecimal}}</text>
+          </view>
+          <text class='shop-gobuy'>立即购买></text>
+        </view>
+      </view>
+    </view>
+  </view>
+<view wx:else>商品不存在或已过期</view>
+</view>

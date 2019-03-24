@@ -1,0 +1,8 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class='container'>
+  <block wx:if="{{isEmpty}}">
+    <image src='{{emptyCart}}' class='empty-img' mode='aspectFit'></image>
+    <text class='empty-text'>购物车空空如也~</text>
+    <button class="empty-btn" type="default" plain="true" size='mini'>去逛逛</button>
+  </block>
+</view>

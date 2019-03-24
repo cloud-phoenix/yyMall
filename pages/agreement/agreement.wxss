@@ -1,0 +1,6 @@
+/* pages/agreement/agreement.wxss */
+.agreement-text{
+  font-size:24rpx;
+  text-indent: 2em;
+  line-height: 2em;
+}

@@ -1,0 +1,25 @@
+<!--pages/class/class.wxml-->
+<view class='search-wrapper'>
+  <!-- 搜索框 -->
+  <view class='search' bindtap='goToSearch'>
+    <icon class="icon-search" type="search" size="14"></icon>
+    <text class="search_text">搜索商品</text>
+  </view>
+</view>
+<!-- 分类菜单 -->
+<view class='sort-wrapper'>
+  <view class='sort-left'>
+    <text class="sort-navbar-name {{index==activeIndex?'sort-navbar-text-on':''}}" wx:for='{{sorts}}' wx:key='_id' bindtap='navbarTap' id='{{item._id}}'>{{item.name}}</text>
+  </view>
+  <scroll-view class='sort-right' scroll-y='true'>
+    <view class='node-wrapper' wx:for='{{sorts[activeIndex].children}}' wx:key='_id'>
+      <text class='node-name'>{{ item.name}}</text>
+      <view class='leaf-wrapper'>
+        <view class='leaf' wx:for='{{item.children}}' wx:key='_id'>
+          <image class='leaf-img' src='{{item.img}}' mode='widthFit' bindtap='goToSearch'></image>
+          <text class='leaf-name'>{{ item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
